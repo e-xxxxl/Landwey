@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aje'landwey</title>
+    <link rel="icon" href="landweyicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .nav1{
+        display: flex;
+        position: fixed;
+        background-color: white;
+        z-index: 2;
+    
+    }
+    .Landweyimage{
+        height: 60px;
+        margin-left: 150px;
+    } 
+    .firsta{
+         font-family: 'Poppins', sans-serif;
+         font-weight: 600;
+         font-size: 12px;
+         line-height: 16.8px;
+         color: rgb(79, 78, 78);
+         margin-top: 25px;
+         margin-left: 300px;
+
+    }
+    .seconda{
+        font-family: 'Poppins', sans-serif;
+         font-weight: 600;
+         font-size: 12px;
+         line-height: 16.8px;
+         color: rgb(79, 78, 78);
+         margin-top: 25px;
+         margin-left: 80px;
+
+    }
+    .thirda{
+        font-family: 'Poppins', sans-serif;
+         font-weight: 600;
+         font-size: 12px;
+         line-height: 16.8px;
+         color: rgb(79, 78, 78);
+         margin-top: 25px;
+         margin-left: 80px;
+
+    }
+    .button1{
+        background-color:rgb(250,100,0) ;
+        color: white;
+        border: none;
+        width: 170px;
+        height: 40px;
+        border-radius: 6px;
+        margin-left: 40px;
+        margin-top: 14px;
+    }
+    .mylandwey{
+        font-family: 'Poppins', sans-serif ;
+        font-size: 12px;
+        font-weight: 700;
+        
+        
+    }
+    
+    .child{
+        display: none;
+        background-color: rgb(255, 255, 255) ;
+        border:none;
+        margin-left: 60px;
+        
+    }
+    .about1:hover .child{
+        display: block;
+        
+    }
+    .about1{
+        margin-top: 25px;
+        cursor: pointer;
+    }
+  
+    .thirda:hover{
+    color: orange;
+    }
+    .newhome{
+        position: absolute;
+        margin-top: 150px;
+        font-size: 45px;
+        font-family: 'Poppins', sans-serif ;
+        font-weight: 800;
+        color: rgb(51, 51, 51);
+        margin-left: 400px;
+
+    }
+    .homep{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(78, 78, 78);
+        margin-top: 230px;
+        margin-left: 250px;
+
+    }
+    .p2{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(78, 78, 78);
+        margin-top: 230px;
+        margin-left: 520px;
+
+    }
+    .label2{
+        display: flex;
+        position: absolute;
+        margin-top: 450px   ;
+
+    }
+    .level1{
+        height: 920px;
+        width: 500px;
+        border: 12px thin black;
+        margin-left: 150px;
+        border-radius: 25px;
+        background-color: rgb(245, 245, 245);
+
+    }
+    .level2{
+        height: 920px;
+        width: 500px;
+        border: 12px thin black;
+        margin-left: 20px;
+        border-radius: 25px;
+        background-color: rgb(245, 245, 245);
+
+    }
+    .rii{
+        width: 500px;
+        height: 453px;
+        border-radius: 25px;
+    }
+    .terrace1{
+        font-size: 23px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 30px;
+        margin-left: 24px;
+        font-weight: 600;
+    }
+    #input1{
+        margin-top: 9px;
+        margin-left: 20px;
+        height: 33px;
+        width: 245px;
+        color: white;
+        background-color: rgb(234,91,12);
+        border: none;
+    }
+    .gymstuff{
+        margin-left: 24px;
+        margin-top: 65px;
+        display: flex;
+    }
+    .gym{
+        height: 36px;
+    }
+    .phone{
+        height: 36px;
+        margin-left: 80px;
+    }
+    .robe{
+        height: 36px;
+        margin-left: 70px;
+
+    }
+    .router{
+        height: 36px;
+        margin-left: 85px;
+
+    }
+    .acc1{
+        margin-left: 28px;
+    
+    }
+    .acc2{
+        margin-left: 65px;
+    
+    }
+    .acc3{
+        margin-left: 37px;
+    }
+    .acc4{
+        margin-left: 90px;
+    }
+    .stuff2{
+        display: flex;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 800;
+        font-size: 19px;
+        margin-top: 22px;
+        color: grey;
+    }
+    .lastimg{
+        display: flex;
+        /* background-color: red; */
+        margin-top: 20px;
+        margin-left: 20px;
+        overflow-x: scroll;
+
+    }
+    .scroll1{
+        width: 142px;
+        height: 70px;
+        border-radius: 10px;
+
+    }
+    .scroll2{
+        width: 142px;
+        height: 70px;
+        border-radius: 10px;
+        margin-left: 20px;
+
+    }
+    .scroll3{
+        width: 142px;
+        height: 70px;
+        border-radius: 10px;
+        margin-left: 20px;
+
+
+    }
+    .scroll4{
+        width: 142px;
+        height: 70px;
+        border-radius: 10px;
+        margin-left: 20px;
+
+    }
+    .seeb{
+        margin-top: 60px;
+        margin-left: 188px;
+        height: 44px;
+        width: 120px;
+        border: none;
+        border-radius: 12px;
+        background-color: rgb(239,95,0);
+        color: white;
+        cursor: pointer;
+    }
+    .omo{
+        position: absolute;
+        color: grey;
+        margin-top: 1500px;
+        margin-left: 556px;
+    }
+    .whatsappbutton{
+        /* background-color: red; */
+        margin-top: 1460px;
+        margin-left: 1184px;
+        width: 150px;  
+        
+              
+    }
+    .whatsappbutton2{
+        width: 150px;
+        background-color:   rgb(239,95,0) ;
+        border: none;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+
+    }
+    .response{
+        display: flex;
+        align-items: center;
+
+    }
+    .Quick{
+        margin-left: 10px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+    }
+    #chat{
+        color: white;
+        margin-left: 10px;
+    }
+
+    
+</style>
+<body>
+    <div>
+        <nav>
+            <div class="nav1">
+        
+                <img class="Landweyimage" src="Landwey image.png" alt="">
+                <a class="firsta">OUR PROJECTS</a>
+                <a class="seconda">SCHEDULE AN INSPECTION</a>
+                <div class="about1">
+                    <a class="thirda">ABOUT US</a>
+                <div class="child">
+                    <p>Our Wey</p>
+                    <p>WeyTV</p>
+                    <p>Blog</p>
+                    <p>Contact us</p>
+                </div>
+                </div>
+                <button class="button1"><a class="mylandwey">My LandWey </a></button>
+    
+            </div>
+      
+        </nav>
+        <span class="newhome">New homes like no other.</span>
+        <p class="homep">When you walk into a Landwey home, you’ll know that everything we do is designed around you. Our homes regularly achieve recognition for </p><br><p class="p2">their design excellence, build quality and customer satisfaction.</p>
+        
+        <div class="label2">
+
+            <div class="level1">
+                <img class="rii" src="landweyimage1.jpg" alt="">
+                <p class="terrace1">Terraces at Terra Gardens</p>
+                <input placeholder="Monastery Road, Sangotedo, Lekki" type="text" name="" id="input1">
+                <div class="gymstuff">
+                    <img class="gym" src="gym.png" alt="">
+                    <img class="phone" src="smartphone.png" alt="">
+                    <img class="robe" src="bathrobe.png" alt="">
+                    <img class="router" src="router.png" alt="">
+                    
+                </div>
+                   <div class="stuff2">
+                    <h5 class="acc1">Gym</h5>
+                    <h5 class="acc2">Smart Entry</h5>
+                    <h5 class="acc3">Spa</h5>
+                    <h5 class="acc4">WiFi</h5>
+                </div>
+                <div class="lastimg">
+                    <img class="scroll1" src="scroll1.jpg" alt="">
+                    <img class="scroll2" src="scroll2.jpg" alt="">
+                    <img class="scroll3" src="scroll3.jpg" alt="">
+                    <img class="scroll4" src="scroll1.jpg" alt="">
+
+                </div>
+               <a href="Landweypage2.html"><button class="seeb">see more</button></a>
+            </div>
+
+            <div class="level2">
+
+
+            </div>
+
+        </div>
+        <h5 class="omo">.LandWey, a member of Oxygen Holdings</h5>
+        
+
+        <div class="whatsappbutton">
+           <a href="https://wa.me/+2349076618975">
+            <button class="whatsappbutton2">
+                <div class="response" >
+                  <span id="chat" class="material-symbols-outlined">
+                      support_agent
+                      </span>
+                      <p class="Quick" >Quick response</p>
+                </div>
+              </button>
+           </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </div>
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+   
+
+        
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>
